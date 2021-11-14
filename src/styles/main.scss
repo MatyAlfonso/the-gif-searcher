@@ -1,0 +1,11 @@
+// All the imports => @import "./components/component-name";
+@import "./base";
+@import "./layout";
+
+//Components
+@import "./components/_nav-bar";
+@import "./components/_main-app";
+@import "./components/gif-expert-app";
+@import "./components/add-category";
+@import "./components/gif-grid";
+@import "./components/gif-grid-item";

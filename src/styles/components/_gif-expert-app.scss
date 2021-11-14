@@ -1,0 +1,44 @@
+.gif-expert-app__main{
+    display: flex;
+    flex-direction: column;
+}
+
+.gif-expert-app__we-can-found-logo{
+    margin: 10% auto;
+    height: auto;
+    width: 300px;
+    padding: 10% 0 10% 0;
+}
+
+.gif-expert-app__back-to-top-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    &:hover{
+        transform: scale(1.1,1.1);
+    }
+}
+
+@media (min-width: 700px){
+    .gif-expert-app__we-can-found-logo{
+        width: 350px;
+        padding: 8% 0 4% 0;
+    }
+}
+
+@media (min-width: 1024px){
+    .gif-expert-app__we-can-found-logo{
+        margin: 6% auto;
+        width: 350px;
+        padding: 8% 0 2% 0;
+    }
+}
+
+@media (min-width: 1440px){
+    .gif-expert-app__we-can-found-logo{
+        margin: 2% auto;
+        width: 400px;
+        padding: 8% 0 2% 0;
+    }
+}

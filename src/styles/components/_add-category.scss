@@ -1,0 +1,31 @@
+.add-category__layout{
+    display: flex;
+    justify-content: center;
+}
+
+.add-category__input{
+    background-color: $lightBlueColor;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 300px;
+    color: $whiteColor;
+    font-weight: bold;
+    box-shadow: 0 2px 1px #888888;
+    outline: none;
+    text-align: center;
+    display: block;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: $whiteColor;
+    font-weight: 400;
+}
+
+@media (min-width: 700px){
+    .add-category__input{
+        height: 50px;
+        width: 300px;
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,34 @@
+.gif-grid__center{
+    text-align: center;
+    margin: 10%;
+}
+
+.gif-grid__card-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 1024px){
+    .gif-grid__center{
+        text-align: center;
+        margin: 10% 0 2% 0;
+    }
+}
+
+@media (min-width: 1440px){
+    .gif-grid__center{
+        text-align: center;
+        margin: 6% 0 1% 0;
+        font-size: 1.6em;
+    }
+
+    .gif-grid__card-grid{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,27 @@
+.gif-grid-item__card{
+    text-align: center;
+    margin: 5%;
+}
+
+.gif-grid-item__card-text{
+    padding: 5%;
+}
+
+.gif-grid-item__card-img{
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 1440px){
+    .gif-grid-item__card-img{
+        width: 500px;
+        height: auto;
+    }
+}
+
+@media (min-width: 1440px){
+    .gif-grid-item__card-img{
+        width: 500px;
+        height: auto;
+    }
+}

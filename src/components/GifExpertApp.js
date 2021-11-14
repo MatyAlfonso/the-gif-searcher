@@ -1,21 +1,28 @@
 import React, { useState } from 'react';
+
 import { AddCategory } from './AddCategory';
 import { GifGrid } from './GifGrid';
 
-const GifExpertApp = () => {
+import weCanFoundLogo from '../styles/images/we-can-found.png';
+import goToTop from '../styles/images/go-to-top.png';
 
-    const [categories, setCategories] = useState(['Spiderman']); //Hook
+export const GifExpertApp = ({ defaultCategories = [] }) => {
+
+    const [categories, setCategories] = useState(defaultCategories); //Hook
 
     /*const handleAdd = () => {
         //setCategories(categories => [...categories, 'Spiderman']);
         setCategories([...categories, 'Spiderman']);
     }*/
 
+    const handleClick = () => {
+        window.scrollTo(0, 0,);
+    }
+
     return (
-        <>
-            <h2>GifExpertApp</h2>
+        <div id="top" className="gif-expert-app__main">
+            <img className="gif-expert-app__we-can-found-logo" src={weCanFoundLogo} alt="We can found the gif you were looking for - logo" />
             <AddCategory setCategories={setCategories} />
-            <hr />
 
             <ol>
                 {
@@ -27,8 +34,15 @@ const GifExpertApp = () => {
                     ))
                 }
             </ol>
-        </>
+
+            <img
+                onClick={() => handleClick()}
+                className="gif-expert-app__back-to-top-btn"
+                src={goToTop}
+                alt="Button to return to the top of the page"
+            />
+
+
+        </div>
     )
 }
-
-export default GifExpertApp;

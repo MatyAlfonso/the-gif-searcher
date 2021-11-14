@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import GifExpertApp from './components/GifExpertApp';
+import {AppRouter} from './components/AppRouter';
 
-import './index.css';
+import './styles/main.scss';
 
-ReactDOM.render(<GifExpertApp />, document.getElementById('root'));
+ReactDOM.render(<AppRouter />, document.getElementById('root'));
 

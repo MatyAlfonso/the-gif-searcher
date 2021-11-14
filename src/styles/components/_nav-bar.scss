@@ -1,0 +1,47 @@
+/*.nav-bar__hamburguer-menu-closed{
+    padding: 0.6em;
+}
+
+.nav-bar__button{
+    margin: 10%;
+    padding:  0.8em 3em 0.8em 3em;
+    background-color: $mediumOrangeColor;
+    color: $whiteColor;
+    border: none;
+    border-radius: 5%;
+    font-weight: 600;
+    width: 100%;
+}
+
+.nav-bar__body{
+    height: 50vh;
+}*/
+
+.nav-bar__layout{
+    background-color: $lightOrangeColor;
+}
+
+
+.nav-bar__container{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar__logo{
+    height: 50px;
+    width: auto;
+    margin: 5%;
+
+    &:hover{
+        -webkit-filter: drop-shadow(2px 2px 2px #666);
+        filter: drop-shadow(5px 5px 5px #666); 
+        transform: scale(1.1,1.1);
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+@media (min-width: 700px){
+    .nav-bar__logo{
+        height: 70px;
+    }
+}
